@@ -1,0 +1,55 @@
+.footerComponent{
+  //position:fixed;
+  //bottom:0;
+
+
+  background: white;
+  padding: 30px 40px 2px 40px;
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+
+  .container-fluid{
+    span,a,h1,h2,h3,h4,h5{
+      line-height: normal;
+      color: #272727;
+      font-weight: 400;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .navbar-brand{
+      background: url('../../../assets/img/logo.png') no-repeat center;
+      padding: 0;
+      margin: 0;
+      height: 59px;
+      width: 158px;
+      position: relative;
+      background-size: contain;
+      left: 10px
+
+    }
+
+    .socialMedia{
+      background: url('../../../assets/img/socialMedia.png') no-repeat center;
+      padding: 0;
+      margin: 0;
+      height: 59px;
+      width: 158px;
+      position: relative;
+      background-size: contain;
+      left: 10px
+    }
+  }
+
+  .rightsReserved{
+    div{
+      a{
+        text-decoration:none;
+        color:black;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+<div class="workerComp floor">
+  <div class="box" *ngFor="let worker of subordinates">
+    <div class="col-xs-12"  >
+      <div [className]="worker.department.substring(0,5)"><div class="department " >{{worker.department}}</div></div>
+      <div [className]="worker.department.substring(0,4) + ' ' +  'avatar'"><div class="avatarPicWrapper" ><img src="{{worker.profile_pic}}  "></div></div>
+      <div class="name w-100 " (click)="openSub(worker)">{{worker.employee_name}}</div>
+      <div class="title w-100">{{worker.business_title}}</div>
+      <div class="region w-100"><div class="addressPic"></div>{{worker.region}}</div>
+      <div class="floor" *ngIf="employee_name == worker.employee_name" >
+        <div class=" ">
+          <div *ngIf="worker.subordinates.length >=1">
+            <app-worker [subordinates]="thisWorkerSubordinates"></app-worker>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+.workersComponent{
+  height: 200vh;
+  padding: 0;
+  background: #f6f7f9;
+  span,a,h1,h2,h3,h4,h5{
+    line-height: normal  ;
+  }
+
+  .searchWrapper{
+    form{
+      input{
+        border: solid 0px gray;
+        width: 384px;
+        height: 40px;
+        text-indent: 38px;
+      }
+      button{
+        background: url('../../../assets/img/searchPic.png') no-repeat center;
+        border: solid 0px gray;
+        cursor: pointer;
+        position: absolute;
+        width: 22px;
+        height: 26px;
+        left: 14px;
+        background-size: cover;
+      }
+    }
+  }
+
+  div *{
+    // animation: 3s ease-in 1s infinite reverse both running slidein
+  }
+  .workersWrapper{
+    margin:0 auto;
+    text-align: center;
+
+    .floor{
+      width: 100%;
+      position: relative;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .topFloor{
+
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      float: right;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      flex-direction: column;
+
+
+      .box{
+        animation: 3s ease-in 1s infinite reverse;
+        text-align: center;
+        width: 240px;
+        height: 224px;
+        position: relative;
+        background: white;
+        border-radius: 30px;
+        margin: 0 auto;
+        padding: 30px 30px;
+        float: right;
+        margin: 10px;
+        margin-top: 50px;
+
+        .avatar{
+          height: 60px;
+          width: 60px;
+          border-radius: 100px;
+          overflow: hidden;
+          padding: 0;
+          margin: 0 auto;
+
+          img{
+            max-height: 60px;
+            border-radius: 100px;
+          }
+        }
+
+        .name{
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 24px;
+          color:#272727;
+          max-width: 184px;
+          padding-top: 10px;cursor: pointer;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        .title{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color:#272727;
+          max-width: 184px;
+          padding-top: 5px;
+        }
+        .region{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color:#767676;
+          padding: 15px 0;
+
+          .addressPic{
+            background: url('../../../assets/img/addressPic.png') no-repeat center;
+            border: solid 0px gray;
+            cursor: pointer;
+            width: 22px;
+            height: 36px;
+            left: 14px;
+            background-size: contain;
+            position: absolute;
+            left: 50px;
+            bottom: 32px;
+          }
+
+        }
+      }
+      app-worker{
+        display: block;
+         div{ display: block;
+          .floor{
+            left: 1px;
+          }
+        }
+      }
+
+    }
+  }
+}

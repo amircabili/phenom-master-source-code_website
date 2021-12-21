@@ -1,0 +1,182 @@
+
+.workerComp:first-child{
+  .floor{
+
+  }
+}
+
+.workerComp{
+
+  .box{
+    animation: 3s ease-in 1s infinite reverse;
+    text-align: center;
+    width: 240px;
+    height: 224px;
+    position: relative;
+    float: right;
+    background: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    margin: 10px;
+    margin-top: 80px;
+
+    .avatar{
+      overflow: hidden;
+      padding: 0;
+      margin: 0 auto;
+      background: #4a4848;
+      border: solid 4px #18a0fb;
+      border-radius: 40px;
+      width: 60px;
+      height: 60px;
+      top: -4px;
+      position: relative;
+
+
+      .avatarPicWrapper{
+        overflow: hidden;
+        padding: 0;
+        margin: 0 auto;
+        background: #4a4848;
+        border: solid 4px #ffffff;
+        border-radius: 40px;
+        width: 52px;
+        height: 52px;
+        right: 0px;
+        position: relative
+      }
+
+      img{
+        /* max-height: 53px; */
+        border-radius: 100px;
+        right: 5px;
+        position: relative;
+        width: 62px;
+        bottom: 1px;
+      }
+    }
+
+    .Capi{
+      &.avatar{
+        border: solid 4px #fcc7c7;
+
+      }
+    }
+
+    .Avia{
+      &.avatar{
+        border: solid 4px #d4edff;
+
+      }
+    }
+
+    .Asse{
+      &.avatar{
+        border: solid 4px #ffd8b5;
+
+      }
+    }
+
+    .Anal{
+      &.avatar{
+        border: solid 4px #ffd2ef;
+
+      }
+    }
+
+    .department{
+      font-size: 14px;
+      background: #18a0fb;
+      border-radius: 30px;
+      line-height: 14px;
+      padding: 5px 10px;
+      top: -80px;
+      position: relative;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .Capit{position: absolute;
+      width: 75%;
+      .department{
+        background:  #fcc7c7;
+      }
+    }
+
+    .Aviat{position: absolute;
+      width: 75%;
+      .department{
+        background: #d4edff;
+      }
+    }
+
+    .Asset{position: absolute;
+      width: 75%;
+      .department{
+        background: #ffd8b5;
+      }
+    }
+
+    .Analy{position: absolute;
+      width: 75%;
+      .department{
+        background: #ffd2ef ;
+      }
+    }
+
+    .name{
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 24px;
+      color:#272727;
+      max-width: 184px;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .title{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color:#272727;
+      max-width: 184px;
+      padding-top: 5px;
+      min-height: 50px;
+    }
+    .region{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color:#767676;
+      padding: 15px 0;
+
+      .addressPic{
+        background: url('../../../assets/img/addressPic.png') no-repeat center;
+        border: solid 0px gray;
+        cursor: pointer;
+        width: 22px;
+        height: 36px;
+        left: 14px;
+        background-size: contain;
+        position: absolute;
+        left: 50px;
+        bottom: 20px;
+      }
+    }
+  }
+
+  .floor{
+    width: 100%;
+    position: absolute;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+
+
+  }
+
+}
